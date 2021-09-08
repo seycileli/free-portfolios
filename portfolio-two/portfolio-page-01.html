@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seyhan's Portfolio Website | ToDo Task Note Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+          integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <!-- logo -->
+        <img src="../img/logo.png" alt="seyhan's logo">
+    </div>
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="../index.html#services" class="nav__link">My Services</a></li>
+            <li class="nav__item"><a href="../index.html#about" class="nav__link">About me</a></li>
+            <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="intro">
+    <h1 class="section__title section__title--intro">
+        ToDo Task<strong>with a Note</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">Get more done.</p>
+    <img src="../img/portfolio-01.png" alt="image of a todo application with notepad attached" class="intro__img">
+</section>
+
+<div class="portfolio-item-individual">
+    <p>Keep track of your tasks and never miss another Due Date</p>
+    <img src="../img/portfolio-01.mov" alt="a short clip todo task application">
+    <p>
+        ToDo Task manager built with using JavaFX. Your ToDo tasks are stored through an XML file, using a Data Binding
+        technique that binds data sources from the provider along with consumer together and synchronizes them.
+
+        In a Data Binding process, each changed data is reflected automatically by the User's input into the Data. Which
+        is why in the demo above you can see with each new Creation, Edit or Deletion is acted upon in seconds.<br><br>
+
+        <span><b>
+            Features:
+        </b></span><br>
+        Give the User an option to Create a New ToDo task from a drop down menu<br>
+        Give the User an option to Create a New ToDo task by an easy to find button<br>
+        Give the User the option to give their ToDo task a subject title<br>
+        Give the User an option to attach a note to their ToDo task<br>
+        Give the User an option to assign a Due Date to their ToDo task<br>
+        Given that a User may not check the Due Date as often, create a user friendly system that will remind
+        the User of their ToDo task Due Date<br>
+        Give the User an option to delete their ToDo task from a drop down menu<br>
+        Give the User an option to delete their ToDo task by right clicking<br>
+        Make a save functionality for the User so that they don't lose track of any new created ToDo task
+        or edited / updated tasks<br>
+    </p>
+    <p>As the users ToDo task deadline approaches, the user will be reminded by a color system.</p>
+
+    <!-- due day of or past due -->
+    <p><span style="color: rgb(204, 51, 0)"><b>Red</b></span>:
+        indicates that the ToDo Task is Due Day of (today)</p>
+
+    <!-- one day before -->
+    <p><span style="color: rgb(255, 153, 102)"><b>Peach</b></span>:
+        indicates ToDo Task is Due in 1 day</p>
+
+    <!-- 2 days notice -->
+    <p><span style="color: rgb(255, 204, 0)"><b>Yellow</b></span>:
+        indicates ToDo Task is Due within 2 days</p>
+
+    <!-- 4 day notice -->
+    <p><span style="color: rgb(153, 204, 51)"><b>Light Green</b></span>:
+        indicates ToDo Task is Due within 4 days</p>
+
+    <!-- 1 week before notice -->
+    <p><span style="color: rgb(51, 153, 0)"><b>Green</b></span>:
+        indicates ToDo Task is Due within 7 days or more</p>
+
+    <p>
+        <!-- tools used -->
+        <span><b>
+            Tools Used:
+        </b></span>
+        Java, JavaFX, XML, FXML
+    </p>
+
+    <p>
+        <a href="https://github.com/seycileli/ToDoWithNotesApplication">Source</a>
+    </p>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <!-- email address -->
+    <a href="mailto:sey.cileli@gmail.com" class="footer__link" style="color: #fff">Contact</a>
+    <ul class="social-list">
+
+        <!-- twitter -->
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://twitter.com/seycileli">
+                <i class="fab fa-twitter" style="color: #1DA1F2"></i>
+            </a>
+        </li>
+
+        <!-- github -->
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/seycileli">
+                <i class="fab fa-github" style="color: #fff"></i>
+            </a>
+        </li>
+
+        <!-- linkedin -->
+        <li class="social-list__item">
+            <a class="social-list__link" href="http://linkedin.com/in/seyhancileli">
+                <i class="fab fa-linkedin" style="color: #2867B2"></i>
+            </a>
+        </li>
+    </ul>
+
+</footer>
+
+<script src="../js/index.js"></script>
+</body>
+</html>
